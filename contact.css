@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    background-color: #e7f1f3;
+    color: #e7f1f3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Logo{
+    position:absolute;
+    top: 0;
+    left: 145px;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%; 
+  }
+
+ .links {
+    position: absolute;
+    top: 70px;
+    right: 180px;
+    display: flex;
+    border-style:solid;
+    border-color: #000;
+    border-radius: 10px;
+    background-color: #000;
+    margin-left: 10%;
+}
+
+.links a{
+    color: #e7f1f3;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.links a:hover{
+    color: #c8c8c8; /*---chchange pa colors  */
+}
+
+.links a.active{
+    color: #c8c8c8;
+}
+
+
+    .main{
+        display: flex;
+        text-align: center;
+    }
+
+    #menu-icon{
+        font-size: 35px;
+        color: #000;
+        cursor: pointer;
+        z-index: 10001;
+        display: none;
+    }
+
+    .container{
+        width: 80%;
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        top: 12rem;
+        padding: 20px 10%;
+        transition: all .50s ease;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .malto{
+        position: relative;
+        top: 10rem;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        border-radius: 15px;
+        border-color: #000;
+        border-style: solid;
+        align-items: center;
+        justify-content: center;
+        transition: all .50s ease;
+        width: 60rem;
+        height: 30rem;
+    }
+    .contact-left{
+        flex-basis: 35%;
+        border-color: #e7f1f3;
+        border-radius: 10px;
+        background-color: #e7f1f3;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        color: #000;
+    }
+    .contact-left span{
+        font-size: 18px;
+        font-style: italic;
+        font-family: sans-serif;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
+    
+    .contact-left p{
+    margin-top: 30px;
+    }
+    
+    .contact-left p i{
+        color: #000;
+        margin-right: 15px;
+        font-size:  25px;
+    }
+    
+    .social-icons{
+        margin-top: 30px;
+    }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #000;
+        display: inline-block;
+        transition: transform 0.5s;
+    
+    }
+    .social-icons a:hover{
+        color: #d3d3d3;
+        transform: translateY(-5px);
+    }
+    
+    .btn.btn2{
+        display: inline-block;
+        background: #2BAF38;
+    
+    }
+    .contact-right form{
+        width: 100%;
+    }
+    
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background:  #d3d3d3;
+        padding: 15px;
+        margin: 15px 0;
+        color: #000;
+        font-size: 18px;
+        border-radius: 6px;
+        
+    }
+    
+    form .btn2{
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .btn{
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+        background:#d3d3d3;
+        border: 1px solid #d3d3d3;
+        padding: 14px 50px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #000;
+        transition: background 0.5s;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #000;
+        font-weight: 300;
+        margin-top: 200px;
+        position: relative;
+        bottom: -30px;
+    }
+    textarea[name=Message] {
+        resize: none;
+    }
+
+    @media(min-width: 5760px){
+        .copyright{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    @media(min-width: 3840px){
+        .copyright{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    
+    @media(min-width: 2880px){
+        .copyright{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    
+    @media(min-width: 7680px){
+        .copyright{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+
+    @media(max-width: 960px){
+        #menu-icon{
+            display: block;
+            position: absolute;
+            top: 50px;
+            right: 35px;
+        }
+
+
+
+        .Logo{
+            height:5rem;
+            width: 5rem;
+            position:absolute;
+            top: 30px;
+            left: 28px;
+        }
+    
+        .links{
+            position: fixed;
+            top:20%;
+            right: -100%;
+            width: 270px;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 15px;
+            transition: all 0.5s ease;
+            z-index: 10001;
+        }
+        .links a{
+            display: block;
+            margin: 12px 0;
+            padding: 0 25px;
+            transition: all .50s ease;
+        }
+        .links a:hover{
+            color: #e7f1f3;
+            transform: translate(5px) ;
+        }
+        .links a.active{
+            color: #e7f1f3;
+        }
+        .links.open{
+            right: 2%;
+        }
+
+    
+        .dets h1 b{
+            font-size: 2.2rem;
+            color: #000;
+            border-radius: 20px;
+        }
+        
+        .dets h1 span{
+            background-color: #000;
+            color: #e7f1f3;
+            border-radius: 10px;
+         }
+
+         .malto{
+         width: 40rem;
+         height: 20rem ;
+        }
+        .contact-left, .contact-right{
+            flex-basis: 100%;
+        }
+      }
+
+      @media(max-width: 768px){
+        .links{
+            position: fixed;
+            top: 22%;
+        }
+        .malto{
+            width: 30rem;
+            height: 15rem ;
+           }
+
+      }
+
+      @media(max-width: 640px){
+        .links{
+            position: fixed;
+            top: 26%;
+        }
+
+        .malto{
+            width: 25rem;
+            height: 13rem ;
+           }
+      }
+
+      @media(max-width: 480px){
+        .links{
+            position: fixed;
+            top: 2%;
+            width: 120px;
+        }
+        .links.open{
+            right: 15%;
+        }
+        .malto{
+            width: 20rem;
+            height: 10rem ;
+           }
+
+      }
+      @media(max-width: 384px){
+        .links{
+            position: fixed;
+            top: 2%;
+            width: 120px;
+        }
+        .links.open{
+            right: 18%;
+        }
+        .links a{
+            display: block;
+            margin: 8px 0;
+            padding: 0 25px;
+            transition: all .50s ease;
+        }
+
+        .malto{
+            width: 20rem;
+            height: 10rem ;
+           }
+
+      }
+
+      @media(min-width: 7680px){
+        .contact-left, .contact-right{
+            flex-basis: 100%;
+        }
+      }
+
+      #msg{
+        color: #779933;
+        margin-top: -40px;
+        display: block;
+    
+    }
