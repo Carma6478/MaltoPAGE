@@ -181,7 +181,7 @@ body{
     background: #000;
     font-weight: 300;
     margin-top: 200px;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
@@ -237,7 +237,7 @@ body{
         right: 35px;
     }
     .copyright{
-        position: absolute;
+        position: relative;
         bottom: 0;
     }
 
